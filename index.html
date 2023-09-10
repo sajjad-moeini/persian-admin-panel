@@ -20,8 +20,24 @@
                                           <h4>
                                                  ادمین عزیز خوش آمدید
                                           </h4>
+                                        <div class="position-relative">
                                           <i class="fa fa-bell-o admin-message-toggle ms-3">
                                           </i>
+                                          <div class="position-absolute message-box">
+                                                <div class="messages-container">
+                                                 
+                                                 <div class="message">
+                                                        <h5 class="message-title">
+                                                               عنوان
+                                                        </h5>
+                                                        <button class="message-btn">
+                                                               مشاهده پیام
+                                                        </button>
+                                                 </div>
+                                                </div>
+                                                 
+                                          </div>
+                                        </div>
                                    </div>
                                    <h1 class="dashboard-title">
                                           داشبورد
@@ -103,6 +119,9 @@
                                                         <li class="d-flex-centering">
                                                                ادمین ها
                                                         </li>
+                                                        <li class="d-flex-centering">
+                                                               خروج
+                                                        </li>
                                                  </ul>
                                           </aside>
                                    </div>
@@ -121,9 +140,16 @@
        let toggle = document.querySelector('.menu-toggle')
        let asideContainer =document.querySelector('.aside-container')
        let asideElem=document.querySelector('aside')
+       let messageBellElem = document.querySelector('.admin-message-toggle')
+       let messagesContainer =document.querySelector('.message-box')
+
+
        toggle.addEventListener('click', () => {
               asideContainer.classList.toggle('menu-toggle-show')
               asideElem.classList.toggle('showAside')
+       })
+       messageBellElem.addEventListener('click',()=>{
+             messagesContainer.classList.toggle('message-box-show')
        })
 </script>
 </html>

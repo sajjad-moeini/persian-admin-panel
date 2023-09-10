@@ -23,7 +23,7 @@ width: 95%;
 background: transparent;
 border-radius: 2vw;
 box-shadow: 0px -5px 10px 1px lightskyblue;
-overflow: hidden;
+overflow: hidden !important;
 }
 
 .h-10{
@@ -49,6 +49,7 @@ nav {
        margin-right: 5vw;
        font-size: 1.5rem !important;
        position: relative;
+       cursor: pointer;
 
        &::after {
               content: '';
@@ -61,7 +62,47 @@ nav {
               top: 0;
             }
      }
-     
+     .message-box{
+       width: 25vw;
+       height: 25vh;
+       background-color: #9296996b;
+       z-index: 2;
+       border-radius: 1.5vw;
+       overflow: hidden;
+       right: 40%;
+       top: -50vh;
+       transition: all .5s;
+}
+.message-box-show{
+            top: 100% !important;
+}
+.message{
+       color: #0d3752;
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       height: 15%;
+       align-items: center;
+       background-color: #fff;
+       margin-top: 2% !important;
+
+     }
+
+     .message-title{
+       margin-right: 10% !important;
+     }
+     .message-btn{
+       padding: .2vh .5vw !important;
+       background-color: #5fa0eb;
+       color: #fff;
+       border: 0;
+       height: 100%;
+       transition: all .5s;
+
+       &:hover{
+              background-color: #0d3752;
+       }
+     }
      aside {
        width: 95%;    
        height: 90%;
@@ -159,5 +200,8 @@ main{
               width: 50% !important;
               right: -210 ;
               top: 7% !important;
+       }
+       .message-box{
+              width: 50vw;
        }
 }

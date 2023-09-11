@@ -181,10 +181,43 @@ aside {
   right: -5 !important;
 }
 
+w-10 {
+  width: 10% !important;
+}
+
 main {
   width: 75% !important;
   margin-right: auto !important;
   height: 100%;
+}
+
+.products-searchBar {
+  outline: 0;
+  padding: 0 1vw !important;
+  transition: all 0.5s;
+}
+.products-searchBar:focus {
+  box-shadow: 0px 0px 10px 1px #9fb6d2;
+}
+
+.searchProduct-btn {
+  background-color: #5fa0eb;
+  color: #fff;
+  box-shadow: 0px 0px 5px 1px #fff;
+  transition: all 0.5s;
+}
+.searchProduct-btn:hover {
+  background-color: #0d3752;
+}
+
+.categury-select-box {
+  cursor: pointer;
+}
+
+.all-products-container {
+  border-radius: 2vw;
+  box-shadow: 0px 0px 10px 1px #5fa0eb;
+  overflow-y: auto !important;
 }
 
 @media screen and (max-width: 992px) {
@@ -218,4 +251,4 @@ main {
   .message-box {
     width: 50vw;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=products.css.map */

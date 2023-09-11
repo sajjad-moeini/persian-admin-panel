@@ -20,24 +20,24 @@
                                           <h4>
                                                  ادمین عزیز خوش آمدید
                                           </h4>
-                                        <div class="position-relative">
-                                          <i class="fa fa-bell-o admin-message-toggle ms-3">
-                                          </i>
-                                          <div class="position-absolute message-box">
-                                                <div class="messages-container">
-                                                 
-                                                 <div class="message">
-                                                        <h5 class="message-title">
-                                                               عنوان
-                                                        </h5>
-                                                        <button class="message-btn">
-                                                               مشاهده پیام
-                                                        </button>
+                                          <div class="position-relative">
+                                                 <i class="fa fa-bell-o admin-message-toggle ms-3">
+                                                 </i>
+                                                 <div class="position-absolute message-box">
+                                                        <div class="messages-container">
+
+                                                               <div class="message">
+                                                                      <h5 class="message-title">
+                                                                             عنوان
+                                                                      </h5>
+                                                                      <button class="message-btn">
+                                                                             مشاهده پیام
+                                                                      </button>
+                                                               </div>
+                                                        </div>
+
                                                  </div>
-                                                </div>
-                                                 
                                           </div>
-                                        </div>
                                    </div>
                                    <h1 class="dashboard-title">
                                           داشبورد
@@ -98,29 +98,47 @@
                                    <div class="position-relative">
                                           <aside>
                                                  <ul class="menu-container">
-                                                        <li class="d-flex-centering active">
-                                                               داشبورد
+                                                        <li ">
+                                                               <a class="d-flex-centering active" href="index.html">
+                                                                      داشبورد
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               محصولات
+                                                        <li ">
+                                                               <a class="d-flex-centering" href="products.html">
+                                                                      محصولات
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               سفارشات
+                                                        <li >
+                                                               <a class="d-flex-centering" href="orders.html">
+                                                                      سفارشات
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               کاربران
+                                                        <li >
+                                                               <a class="d-flex-centering" href="users.html">
+                                                                      کاربران
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               افزودن کاربر
+                                                        <li >
+                                                               <a class="d-flex-centering" href="addUser.html">
+                                                                      افزودن کاربر
+
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               افزودن محصول
+                                                        <li >
+                                                               <a class="d-flex-centering" href="addProduct.html">
+                                                                      افزودن محصول
+
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               ادمین ها
+                                                        <li >
+                                                               <a class="d-flex-centering" href="admins.html">
+                                                                      ادمین ها
+                                                               </a>
                                                         </li>
-                                                        <li class="d-flex-centering">
-                                                               خروج
+                                                        <li >
+                                                               <a class="d-flex-centering" href="">
+                                                                      خروج
+                                                               </a>
                                                         </li>
                                                  </ul>
                                           </aside>
@@ -138,18 +156,19 @@
 </body>
 <script>
        let toggle = document.querySelector('.menu-toggle')
-       let asideContainer =document.querySelector('.aside-container')
-       let asideElem=document.querySelector('aside')
+       let asideContainer = document.querySelector('.aside-container')
+       let asideElem = document.querySelector('aside')
        let messageBellElem = document.querySelector('.admin-message-toggle')
-       let messagesContainer =document.querySelector('.message-box')
+       let messagesContainer = document.querySelector('.message-box')
 
 
        toggle.addEventListener('click', () => {
               asideContainer.classList.toggle('menu-toggle-show')
               asideElem.classList.toggle('showAside')
        })
-       messageBellElem.addEventListener('click',()=>{
-             messagesContainer.classList.toggle('message-box-show')
+       messageBellElem.addEventListener('click', () => {
+              messagesContainer.classList.toggle('message-box-show')
        })
 </script>
+
 </html>

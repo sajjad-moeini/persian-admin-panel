@@ -1,0 +1,39 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: gandom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(135deg, #5fa0eb, #3a0c97);
+}
+
+main {
+  background: url(../pic/adminpanelloggin.jpg);
+  background-size: cover;
+}
+
+.panel-container {
+  height: 70%;
+  width: 70%;
+  background: transparent;
+  border-radius: 2vw;
+  background: linear-gradient(135deg, #266fc3, #7457b0);
+  box-shadow: 0px -5px 10px 1px lightskyblue;
+  overflow: hidden !important;
+}

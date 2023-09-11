@@ -1,0 +1,239 @@
+<html lang="en" dir="rtl">
+
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>پنل مدیریت</title>
+       <link rel="stylesheet" href="css/bootstrap.rtl.css">
+       <link rel="stylesheet" href="css/font-awesome.css">
+       <link rel="stylesheet" href="css/products.css">
+</head>
+
+
+<body>
+
+       <div class="row  h-100 d-flex-centering">
+              <div class="col-12  panel-container p-3">
+                     <div class=" h-10">
+                            <nav>
+                                   <div class="admin-panel">
+                                          <h4>
+                                                 ادمین عزیز خوش آمدید
+                                          </h4>
+                                          <div class="position-relative">
+                                                 <i class="fa fa-bell-o admin-message-toggle ms-3">
+                                                 </i>
+                                                 <div class="position-absolute message-box">
+                                                        <div class="messages-container">
+
+                                                               <div class="message">
+                                                                      <h5 class="message-title">
+                                                                             عنوان
+                                                                      </h5>
+                                                                      <button class="message-btn">
+                                                                             مشاهده پیام
+                                                                      </button>
+                                                               </div>
+                                                        </div>
+
+                                                 </div>
+                                          </div>
+                                   </div>
+                                   <h1 class="dashboard-title">
+                                          سفارشات </h1>
+                            </nav>
+                     </div>
+                     <div class="row h-90 position-relative ">
+
+                            <main class="pt-4">
+                                   <div class="h-10 w-100">
+                                          <form action="#">
+                                                 <label for="select-orders" class="form-label text-light mb-2">
+                                                        لطفا نوع دسته بندی سفارشات را انتخاب کنید :
+                                                 </label>
+                                                 <div class="row">
+                                                        <select name="select-orders" id="select-orders"
+                                                               class=" col-12 col-md-6 p-2 form-control-sm">
+                                                               <option value="-1">
+                                                                      دسته بندی سفارش را انتخاب کنید
+                                                               </option>
+                                                               <option value="allOrders">
+                                                                      همه ی سفارشات
+                                                               </option>
+                                                               <option value="newOrders">
+                                                                      سفارش جدید
+                                                               </option>
+                                                               <option value="pendingOrders">
+                                                                      در حال پردازش
+                                                               </option>
+                                                               <option value="unsuccessOrders">
+                                                                      ناموفق
+                                                               </option>
+
+                                                        </select>
+
+
+                                                 </div>
+                                          </form>
+                                   </div>
+
+
+                                   <div class="h-90 border-0 rounded-3  pt-4 orders-container">
+                                          <table class="table h-100">
+                                                 <thead >
+                                                        <tr>
+                                                               <th class="text-center">
+                                                                      نام محصول
+                                                               </th>
+                                                               <th class="text-center">
+                                                                      آیدی سفارش
+                                                               </th>
+                                                        </tr>
+                                                 </thead>
+                                                 <tbody  >
+                                                        <tr >
+                                                               <td class="fs-2 text-center">ایکس</td>
+                                                               <td class="fs-2 text-center">7</td>
+                                                               <td class="text-center">
+                                                                      <a href="#" class="btn btn-primary py-1 px-2">
+                                                                             وضعیت
+                                                                      </a>
+                                                               </td>
+                                                               <td class="text-center">
+                                                                      <a href="#" class="btn btn-success py-1 px-2">
+                                                                             ثبت
+                                                                      </a>
+                                                               </td>
+                                                               <td class="text-center">
+                                                                      <a href="#" class="btn btn-danger py-1 px-2">
+                                                                             حذف
+                                                                      </a>
+                                                               </td>
+                                                               <td class="text-center">
+                                                                      <a href="#" class="btn btn-secondary py-1 px-2">
+                                                                             ویرایش
+                                                                      </a>
+                                                               </td>
+                                                        </tr>
+                                                 </tbody>
+                                          </table>
+                                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   <!-- <div class="h-90 border-0 rounded-3 bg-danger orders-container"> 
+
+                                          <div class="order-box h-10 row  border-bottom ">
+
+                                                 <div class="col-2 d-flex-centering h6">
+                                                        آیدی سفارش
+                                                 </div>
+                                                 <button class="btn btn-primary col-2 col-md-1 ms-auto h-50 my-auto">
+                                                        نمایش
+                                                 </button>
+                                                 <button class="btn btn-secondary col-2 col-md-1 ms-auto h-50 my-auto">
+                                                        ویرایش
+                                                 </button>
+                                                 <button
+                                                        class="btn btn-danger col-2 col-md-1 ms-auto me-3 h-50 my-auto ">
+                                                        حذف
+                                                 </button>
+
+
+
+                                          </div>
+
+                                    </div> -->
+                            </main>
+
+                            <i class="fa fa-bars position-absolute menu-toggle"></i>
+                            <div class="position-absolute aside-container">
+                                   <div class="position-relative">
+                                          <aside>
+                                                 <ul class="menu-container">
+                                                        <li ">
+                                                               <a class=" d-flex-centering " href=" index.html">
+                                                               داشبورد
+                                                               </a>
+                                                        </li>
+                                                        <li ">
+                                                               <a class=" d-flex-centering active"
+                                                               href="products.html">
+                                                               محصولات
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="orders.html">
+                                                                      سفارشات
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="users.html">
+                                                                      کاربران
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="addUser.html">
+                                                                      افزودن کاربر
+
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="addProduct.html">
+                                                                      افزودن محصول
+
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="admins.html">
+                                                                      ادمین ها
+                                                               </a>
+                                                        </li>
+                                                        <li>
+                                                               <a class="d-flex-centering" href="">
+                                                                      خروج
+                                                               </a>
+                                                        </li>
+                                                 </ul>
+                                          </aside>
+                                   </div>
+
+                            </div>
+                     </div>
+
+
+
+              </div>
+
+       </div>
+
+</body>
+<script>
+       let toggle = document.querySelector('.menu-toggle')
+       let asideContainer = document.querySelector('.aside-container')
+       let asideElem = document.querySelector('aside')
+       let messageBellElem = document.querySelector('.admin-message-toggle')
+       let messagesContainer = document.querySelector('.message-box')
+
+
+       toggle.addEventListener('click', () => {
+              asideContainer.classList.toggle('menu-toggle-show')
+              asideElem.classList.toggle('showAside')
+       })
+       messageBellElem.addEventListener('click', () => {
+              messagesContainer.classList.toggle('message-box-show')
+       })
+</script>
+
+</html>

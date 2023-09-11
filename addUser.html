@@ -6,7 +6,7 @@
        <title>پنل مدیریت</title>
        <link rel="stylesheet" href="css/bootstrap.rtl.css">
        <link rel="stylesheet" href="css/font-awesome.css">
-       <link rel="stylesheet" href="css/users.css">
+       <link rel="stylesheet" href="css/addUser.css">
 </head>
 
 
@@ -40,63 +40,34 @@
                                           </div>
                                    </div>
                                    <h1 class="dashboard-title">
-                                          کاربران </h1>
+                                          افزودن کاربر </h1>
                             </nav>
                      </div>
                      <div class="row h-90 position-relative ">
 
-                            <main class="pt-4">
-                                   <div class="h-10 w-100">
-                                          <form action="#">
-                                                 <div class="row">
-                                                        <input type="text"
-                                                               class="form-control-sm userName-input border-0 rounded-3  col-4 mx-1 p-1 "
-                                                               placeholder="نام کاربری ..." >
-                                                               <input type="text" class="form-control-sm userName-input border-0 rounded-3  col-4 mx-1 p-1 " placeholder=" یوزر آیدی ... ">
-                                                        <button class="btn btn-primary col-2 ms-auto">
-                                                               جستجو
-                                                        </button>
-                                                 </div>
-                                          </form>
-                                          <hr class="my-1 text-light">
-                                   </div>
+                      <main >
+                            <div class="row h-90 d-flex-centering">
+                                   <div class="row h-10">
+                                   <input type="text" class="form-control-sm col-5 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" نام">
+                                   <input type="text" class="form-control-sm col-5 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" نام خانوادگی">
+                                   <input type="text" class="form-control-sm col-5 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" نام کاربری">
+                                   <input type="email" class="form-control-sm col-5 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" ایمیل">
+                                   <input type="password" class="form-control-sm col-5 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" رمز عبور">
+                            </div>
+                            </div>
+                            <div class="row">
+                                   <button class="btn btn-primary col-md-2 col-9  ms-auto me-md-0">
+                                          ثبت کاربر
+                                   </button>
+                                   <div class="col-2"></div>
+                            </div>
 
-
-                                   <div class="h-90 border-0 rounded-3  pt-4 orders-container">
-                                      <table class="table">
-                                          <thead>
-                                                 <tr>
-                                                        <th class="text-center text-light fs-4">آیدی</th>
-                                                        <th class="text-center text-light fs-4">نام کاربری</th>
-                                                        <th class="text-center text-light fs-4">مشخصات </th>
-                                                        
-                                                 </tr>
-                                          </thead>
-                                          <tbody>
-                                                 <tr>
-                                                        <td class="text-center text-light fs-4">7</td>
-                                                        <td class="text-center text-light fs-4">سجاد</td>
-                                                        <td class="text-center text-light fs-4">
-                                                               <a href="#" class="btn btn-primary px-3 py-1">
-                                                                      مشاهده یا ویرایش
-                                                               </a>
-                                                        </td>
-                                                        <td class="text-center text-light fs-4">
-                                                               <a href="#" class="btn btn-danger px-3 py-1">
-                                                                       حذف کاربر
-                                                               </a>
-                                                        </td>
-                                                        <td class="text-center text-light fs-4">
-                                                               <a href="#" class="btn btn-success px-3 py-1">
-                                                                      ارتقاع
-                                                               </a>
-                                                        </td>
-                                                 </tr>
-                                          </tbody>
-                                      </table>
-                                   </div>
-
-                            </main>
+                      </main>
 
                             <i class="fa fa-bars position-absolute menu-toggle"></i>
                             <div class="position-absolute aside-container">
@@ -120,12 +91,12 @@
                                                                </a>
                                                         </li>
                                                         <li>
-                                                               <a class="d-flex-centering active" href="users.html">
+                                                               <a class="d-flex-centering " href="users.html">
                                                                       کاربران
                                                                </a>
                                                         </li>
                                                         <li>
-                                                               <a class="d-flex-centering" href="addUser.html">
+                                                               <a class="d-flex-centering active" href="addUser.html">
                                                                       افزودن کاربر
 
                                                                </a>

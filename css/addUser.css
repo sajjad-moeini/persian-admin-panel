@@ -1,0 +1,230 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: gandom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(95, 160, 235), rgb(58, 12, 151));
+}
+
+.panel-container {
+  height: 95%;
+  width: 95%;
+  background: transparent;
+  border-radius: 2vw;
+  box-shadow: 0px -5px 10px 1px lightskyblue;
+  overflow: hidden !important;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 2vw;
+  color: aliceblue;
+}
+
+.admin-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-message-toggle {
+  margin-right: 5vw;
+  font-size: 1.5rem !important;
+  position: relative;
+  cursor: pointer;
+}
+.admin-message-toggle::after {
+  content: "";
+  width: 40%;
+  height: 40%;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+}
+
+.message-box {
+  width: 25vw;
+  height: 25vh;
+  background-color: rgba(146, 150, 153, 0.4196078431);
+  z-index: 2;
+  border-radius: 1.5vw;
+  overflow: hidden;
+  right: 40%;
+  top: -50vh;
+  transition: all 0.5s;
+}
+
+.message-box-show {
+  top: 100% !important;
+}
+
+.message {
+  color: #0d3752;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 15%;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 2% !important;
+}
+
+.message-title {
+  margin-right: 10% !important;
+}
+
+.message-btn {
+  padding: 0.2vh 0.5vw !important;
+  background-color: #5fa0eb;
+  color: #fff;
+  border: 0;
+  height: 100%;
+  transition: all 0.5s;
+}
+.message-btn:hover {
+  background-color: #0d3752;
+}
+
+aside {
+  width: 95%;
+  height: 90%;
+  box-shadow: 0px 0px 5px 1px lightskyblue;
+  border-radius: 2vw;
+  overflow: hidden;
+  background: url(../pic/winter-sunset-Marina\ Zezelina-SS.jpg);
+  background-size: cover;
+}
+
+.menu-container {
+  padding-top: 10% !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(128, 128, 128, 0.525);
+}
+.menu-container li {
+  color: white;
+  cursor: pointer;
+  height: 10%;
+  transition: all 0.5s;
+}
+.menu-container li:hover {
+  color: #0d3752;
+  background-color: #5fa0eb;
+}
+.menu-container li a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.active {
+  color: #0d3752;
+  background-color: #5fa0eb;
+}
+
+.aside-container {
+  transition: all 0.7s;
+  width: 20%;
+  height: 90%;
+}
+
+.menu-toggle {
+  z-index: 2;
+  top: -10 !important;
+  right: 5;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem !important;
+  display: none;
+}
+
+.showAside {
+  visibility: visible !important;
+}
+
+.menuToggleMove {
+  right: 500 !important;
+}
+
+.menu-toggle-show {
+  right: -5 !important;
+}
+
+w-10 {
+  width: 10% !important;
+}
+
+main {
+  width: 75% !important;
+  margin-right: auto !important;
+  height: 100%;
+}
+
+.input-box:focus {
+  outline: 0 !important;
+  box-shadow: 0px 0px 10px 1px #5fa0eb !important;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-toggle {
+    left: 75 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 90% !important;
+    margin: auto !important;
+    height: 100%;
+  }
+  aside {
+    margin-left: 10% !important;
+    visibility: hidden;
+  }
+  .admin-panel {
+    position: relative;
+  }
+  .menu-toggle {
+    display: block;
+    right: -10;
+    top: 10;
+  }
+  .aside-container {
+    width: 50% !important;
+    right: -210;
+    top: 7% !important;
+  }
+  .message-box {
+    width: 50vw;
+  }
+}/*# sourceMappingURL=addUser.css.map */

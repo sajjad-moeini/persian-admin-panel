@@ -27,8 +27,22 @@ background: transparent;
 border-radius: 2vw;
 box-shadow: 0px -5px 10px 1px lightskyblue;
 overflow: hidden !important;
-}
+background: url(../pic/cropped.16_to_9\ \(u1\).jpg);
+background-size: cover;
 
+}
+.colorLayout{
+       position: absolute;
+       height: 95%;
+       width: 95%;
+       top: 2.5%;
+       left: 2.5%;
+       border-radius: 2vw;
+       background-color: #0c0c0ce0;
+}
+.z-index-5{
+       z-index: 5 !important;
+}
 .h-10{
        height: 10%;
 }
@@ -114,6 +128,7 @@ nav {
        overflow: hidden;
        background: url(../pic/winter-sunset-Marina\ Zezelina-SS.jpg);
        background-size: cover;
+      
        
      }
      
@@ -124,7 +139,7 @@ nav {
        display: flex;
        flex-direction: column;
        justify-content: space-around;
-       background-color: rgba(128, 128, 128, 0.525);
+       background-color: rgba(0, 0, 0, 0.826);
        li{
               color: white;
               cursor: pointer;

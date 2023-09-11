@@ -30,6 +30,22 @@ body {
   border-radius: 2vw;
   box-shadow: 0px -5px 10px 1px lightskyblue;
   overflow: hidden !important;
+  background: url(../pic/cropped.16_to_9\ \(u1\).jpg);
+  background-size: cover;
+}
+
+.colorLayout {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  top: 2.5%;
+  left: 2.5%;
+  border-radius: 2vw;
+  background-color: rgba(12, 12, 12, 0.8784313725);
+}
+
+.z-index-5 {
+  z-index: 5 !important;
 }
 
 .h-10 {
@@ -130,7 +146,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(128, 128, 128, 0.525);
+  background-color: rgba(0, 0, 0, 0.826);
 }
 .menu-container li {
   color: white;

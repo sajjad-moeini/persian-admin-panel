@@ -6,7 +6,7 @@
        <title>پنل مدیریت</title>
        <link rel="stylesheet" href="css/bootstrap.rtl.css">
        <link rel="stylesheet" href="css/font-awesome.css">
-       <link rel="stylesheet" href="css/products.css">
+       <link rel="stylesheet" href="css/users.css">
 </head>
 
 
@@ -48,76 +48,52 @@
                             <main class="pt-4">
                                    <div class="h-10 w-100">
                                           <form action="#">
-                                                 <label for="select-orders" class="form-label text-light mb-2">
-                                                        لطفا نوع دسته بندی سفارشات را انتخاب کنید :
-                                                 </label>
                                                  <div class="row">
-                                                        <select name="select-orders" id="select-orders"
-                                                               class=" col-12 col-md-6 p-2 form-control-sm">
-                                                               <option value="-1">
-                                                                      دسته بندی سفارش را انتخاب کنید
-                                                               </option>
-                                                               <option value="allOrders">
-                                                                      همه ی سفارشات
-                                                               </option>
-                                                               <option value="newOrders">
-                                                                      سفارش جدید
-                                                               </option>
-                                                               <option value="pendingOrders">
-                                                                      در حال پردازش
-                                                               </option>
-                                                               <option value="unsuccessOrders">
-                                                                      ناموفق
-                                                               </option>
-
-                                                        </select>
-
-
+                                                        <input type="text"
+                                                               class="form-control-sm userName-input border-0 rounded-3  col-4 mx-1 p-1 "
+                                                               placeholder="نام کاربری ..." >
+                                                               <input type="text" class="form-control-sm userName-input border-0 rounded-3  col-4 mx-1 p-1 " placeholder=" یوزر آیدی ... ">
+                                                        <button class="btn btn-primary col-2 ms-auto">
+                                                               جستجو
+                                                        </button>
                                                  </div>
                                           </form>
+                                          <hr class="my-1 text-light">
                                    </div>
 
 
                                    <div class="h-90 border-0 rounded-3  pt-4 orders-container">
-                                          <table class="table h-100">
-                                                 <thead >
-                                                        <tr>
-                                                               <th class="text-center text-light">
-                                                                      نام محصول
-                                                               </th>
-                                                               <th class="text-center text-light">
-                                                                      آیدی سفارش
-                                                               </th>
-                                                        </tr>
-                                                 </thead>
-                                                 <tbody  >
-                                                        <tr >
-                                                               <td class="fs-2 text-center text-light">ایکس</td>
-                                                               <td class="fs-2 text-center text-light">7</td>
-                                                               <td class="text-center">
-                                                                      <a href="#" class="btn btn-primary py-1 px-2">
-                                                                             وضعیت
-                                                                      </a>
-                                                               </td>
-                                                               <td class="text-center">
-                                                                      <a href="#" class="btn btn-success py-1 px-2">
-                                                                             ثبت
-                                                                      </a>
-                                                               </td>
-                                                               <td class="text-center">
-                                                                      <a href="#" class="btn btn-danger py-1 px-2">
-                                                                             حذف
-                                                                      </a>
-                                                               </td>
-                                                               <td class="text-center">
-                                                                      <a href="#" class="btn btn-secondary py-1 px-2">
-                                                                             ویرایش
-                                                                      </a>
-                                                               </td>
-                                                        </tr>
-                                                      
-                                                 </tbody>
-                                          </table>
+                                      <table class="table">
+                                          <thead>
+                                                 <tr>
+                                                        <th class="text-center text-light fs-4">آیدی</th>
+                                                        <th class="text-center text-light fs-4">نام کاربری</th>
+                                                        <th class="text-center text-light fs-4">مشخصات </th>
+                                                        
+                                                 </tr>
+                                          </thead>
+                                          <tbody>
+                                                 <tr>
+                                                        <td class="text-center text-light fs-4">7</td>
+                                                        <td class="text-center text-light fs-4">سجاد</td>
+                                                        <td class="text-center text-light fs-4">
+                                                               <a href="#" class="btn btn-primary px-3 py-1">
+                                                                      مشاهده یا ویرایش
+                                                               </a>
+                                                        </td>
+                                                        <td class="text-center text-light fs-4">
+                                                               <a href="#" class="btn btn-danger px-3 py-1">
+                                                                       حذف کاربر
+                                                               </a>
+                                                        </td>
+                                                        <td class="text-center text-light fs-4">
+                                                               <a href="#" class="btn btn-success px-3 py-1">
+                                                                      ارتقاع
+                                                               </a>
+                                                        </td>
+                                                 </tr>
+                                          </tbody>
+                                      </table>
                                    </div>
 
                             </main>
@@ -134,17 +110,17 @@
                                                         </li>
                                                         <li ">
                                                                <a class=" d-flex-centering "
-                                                               href="products.html">
+                                                               href=" products.html">
                                                                محصولات
                                                                </a>
                                                         </li>
                                                         <li>
-                                                               <a class="d-flex-centering active" href="orders.html">
+                                                               <a class="d-flex-centering " href="orders.html">
                                                                       سفارشات
                                                                </a>
                                                         </li>
                                                         <li>
-                                                               <a class="d-flex-centering" href="users.html">
+                                                               <a class="d-flex-centering active" href="users.html">
                                                                       کاربران
                                                                </a>
                                                         </li>

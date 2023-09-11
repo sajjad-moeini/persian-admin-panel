@@ -156,7 +156,7 @@ aside {
 .aside-container {
   transition: all 0.7s;
   width: 20%;
-  height: 100% !important;
+  height: 100%;
 }
 
 .menu-toggle {
@@ -191,10 +191,6 @@ main {
   height: 100%;
 }
 
-.order-box {
-  overflow-x: auto;
-}
-
 @media screen and (max-width: 992px) {
   .menu-toggle {
     left: 75 !important;
@@ -226,4 +222,4 @@ main {
   .message-box {
     width: 50vw;
   }
-}/*# sourceMappingURL=orders.css.map */
+}/*# sourceMappingURL=addProduct.css.map */

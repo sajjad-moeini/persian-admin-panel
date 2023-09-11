@@ -6,7 +6,7 @@
        <title>پنل مدیریت</title>
        <link rel="stylesheet" href="css/bootstrap.rtl.css">
        <link rel="stylesheet" href="css/font-awesome.css">
-       <link rel="stylesheet" href="css/style.css">
+       <link rel="stylesheet" href="css/addProduct.css">
 </head>
 
 
@@ -40,58 +40,37 @@
                                           </div>
                                    </div>
                                    <h1 class="dashboard-title">
-                                          داشبورد
-                                   </h1>
+                                          افزودن کالا </h1>
                             </nav>
                      </div>
                      <div class="row h-90 position-relative ">
 
-                            <main>
-                                   <img src="pic/nemudar.jpg" class="h-50 w-100" alt="nemudar">
-                                   <div class="row h-100">
-                                          <div class="col-3 h-50 d-flex d-flex-centering ">
-                                                 <div
-                                                        class="h-50 p-4 d-flex flex-column  rounded-circle d-flex-centering bg-info">
-                                                        <h5>مقدار فروش کل</h5>
-                                                        <h3>
-                                                               1012
-                                                        </h3>
-                                                 </div>
+                      <main >
+                            <div class="row h-90 pt-4">
+                                   <div class="row h-10">
+                                   <input type="text" class="form-control-sm col-5 p-1 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" نام کالا">
+                                   <input type="text" class="form-control-sm col-5 p-1 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" دسته بندی مربوطه">
+                                   <input type="text" class="form-control-sm col-5 p-1 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" قیمت">
+                                   <input type="text" class="form-control-sm col-5 p-1 col-md-3 input-box border-0
+                                   m-md-3 m-2" placeholder=" موجودی">
+                                   <input type="file" class="form-control-sm col-3 p-1 col-md-6 input-box border-0
+                                   m-md-3 m-2" >
+                                   <textarea class="form-control p-1 input-box border-0 w-75 ms-2 ms-md-3" placeholder="توضیحات مربوط به کالا"  cols="20" rows="10"></textarea>
+                                   
+                                
+                            </div>
+                            </div>
+                            <div class="row">
+                                   <button class="btn btn-success col-md-2 col-9  ms-auto me-md-0 submitUser-btn">
+                                          ثبت کالا
+                                   </button>
+                                   <div class="col-2"></div>
+                            </div>
 
-                                          </div>
-                                          <div class="col-3 h-50 d-flex d-flex-centering ">
-                                                 <div
-                                                        class="h-50 p-4 d-flex flex-column  rounded-circle d-flex-centering bg-warning">
-                                                        <h5>مقدار خرید کل</h5>
-                                                        <h3>
-                                                               1000
-                                                        </h3>
-                                                 </div>
-
-                                          </div>
-                                          <div class="col-3 h-50 d-flex d-flex-centering ">
-                                                 <div
-                                                        class="h-50 p-4 d-flex flex-column  rounded-circle d-flex-centering bg-success">
-                                                        <h5>مقدار سود کل</h5>
-                                                        <h3>
-                                                               12
-                                                        </h3>
-                                                 </div>
-
-                                          </div>
-                                          <div class="col-3 h-50 d-flex d-flex-centering ">
-                                                 <div
-                                                        class="h-50 p-4 d-flex flex-column  rounded-circle d-flex-centering bg-secondary">
-                                                        <h5>تعداد کاربران</h5>
-                                                        <h3>
-                                                               451
-                                                        </h3>
-                                                 </div>
-
-                                          </div>
-
-                                   </div>
-                            </main>
+                      </main>
 
                             <i class="fa fa-bars position-absolute menu-toggle"></i>
                             <div class="position-absolute aside-container">
@@ -99,43 +78,44 @@
                                           <aside>
                                                  <ul class="menu-container">
                                                         <li ">
-                                                               <a class="d-flex-centering active" href="index.html">
-                                                                      داشبورد
+                                                               <a class=" d-flex-centering " href=" index.html">
+                                                               داشبورد
                                                                </a>
                                                         </li>
                                                         <li ">
-                                                               <a class="d-flex-centering" href="products.html">
-                                                                      محصولات
+                                                               <a class=" d-flex-centering "
+                                                               href=" products.html">
+                                                               محصولات
                                                                </a>
                                                         </li>
-                                                        <li >
-                                                               <a class="d-flex-centering" href="orders.html">
+                                                        <li>
+                                                               <a class="d-flex-centering " href="orders.html">
                                                                       سفارشات
                                                                </a>
                                                         </li>
-                                                        <li >
-                                                               <a class="d-flex-centering" href="users.html">
+                                                        <li>
+                                                               <a class="d-flex-centering " href="users.html">
                                                                       کاربران
                                                                </a>
                                                         </li>
-                                                        <li >
-                                                               <a class="d-flex-centering" href="addUser.html">
+                                                        <li>
+                                                               <a class="d-flex-centering " href="addUser.html">
                                                                       افزودن کاربر
 
                                                                </a>
                                                         </li>
-                                                        <li >
-                                                               <a class="d-flex-centering" href="addProduct.html">
+                                                        <li>
+                                                               <a class="d-flex-centering active" href="addProduct.html">
                                                                       افزودن محصول
 
                                                                </a>
                                                         </li>
-                                                        <!-- <li >
+                                                        <!-- <li>
                                                                <a class="d-flex-centering" href="admins.html">
                                                                       ادمین ها
                                                                </a>
                                                         </li> -->
-                                                        <li >
+                                                        <li>
                                                                <a class="d-flex-centering" href="">
                                                                       خروج
                                                                </a>

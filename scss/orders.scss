@@ -150,7 +150,7 @@ nav {
      .aside-container{
        transition: all .7s;     
        width: 20%;
-       height: 90%;
+       height: 100% !important;
      }
      .menu-toggle{
        z-index: 2;
